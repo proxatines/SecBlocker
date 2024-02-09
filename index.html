@@ -129,12 +129,12 @@
     menu.remove();
   };
 
-  button.innerHTML = 'Launch ByeBlocker';
+  button.innerHTML = 'Launch SecBlocker';
   button.style.cssText = `
     font-family: Arial;
     font-size: 16px;
-    color: #fff;
-    background-color: #333;
+    color: #351c75;
+background-color: #20124d;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -142,7 +142,7 @@
     cursor: pointer;
   `;
   button.onclick = function() {
-    var link = prompt("Url?");
+    var link = prompt("What URL would you like to go to?");
     var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
     fetch(proxy + link)
       .then((response) => response.text())
@@ -210,9 +210,3 @@
     }
   </style>
   </head>
-  <body>
-    <div class="bottom-left">
-Tacogamerman on github
- </div>
-  </body>
-  
